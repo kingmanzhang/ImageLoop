@@ -49,8 +49,8 @@ public class ImageLoopEditor {
 			
 			System.out.print("enter command (? for help)> ");
 			inputLine = scnr.nextLine().trim(); //trim leading and trailing spaces
-		   operation = inputLine.charAt(0); //first character is the choice 
-		   										   //of operation
+			//first character is the choice of operation
+			operation = inputLine.charAt(0); 
 
 			switch (operation) {
 			
@@ -219,8 +219,8 @@ public class ImageLoopEditor {
 				if(!Character.isWhitespace(substring.charAt(0))) {
 					inputValid = false;
 				} else {
-					String strTrimmed = substring.trim();//Maybe I should only trim 
-																//the left end? How?
+					//Maybe I should only trim the left end? How?
+					String strTrimmed = substring.trim();
 					for (int i = 0; i < strTrimmed.length(); i++) {
 						char aChar = strTrimmed.charAt(i);
 						if(!Character.isLetter(aChar) && !Character.isDigit(aChar)
@@ -329,8 +329,8 @@ public class ImageLoopEditor {
 				String newLine = inFile.nextLine(); //each line in the file
 				String [] strs = newLine.split(" "); //split at spaces
 				String filename = strs[0]; //first word is filename
-				int duration = Integer.parseInt(strs[1]); //second word is duration
-																	//parse string to an integer
+				//second word is duration parse string to an integer
+				int duration = Integer.parseInt(strs[1]); 
 				String title = strs[2]; //remaining words are title
 				for (int i = 3; i < strs.length; i++) {
 					title += (" " + strs[i]);
