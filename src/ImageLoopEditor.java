@@ -205,7 +205,9 @@ public class ImageLoopEditor {
 	/**
 	 * A method to check whether the input is valid for operations s l a i
 	 * @param str: input line to check
-	 * @return true if the first character is followed by at least one space and the remainder of the line contains only letters, digits, underscores, periods, slashes and dashes
+	 * @return true if the first character is followed by at least one space 
+	 * and the remainder of the line contains only letters, digits, 
+	 * underscores, periods, slashes and dashes
 	 *
 	 */
 	private static boolean inputCheck(String str) {
@@ -217,11 +219,13 @@ public class ImageLoopEditor {
 				if(!Character.isWhitespace(substring.charAt(0))) {
 					inputValid = false;
 				} else {
-					String strTrimmed = substring.trim();//Maybe I should only trim the left end
+					String strTrimmed = substring.trim();//Maybe I should only trim 
+																//the left end? How?
 					for (int i = 0; i < strTrimmed.length(); i++) {
 						char aChar = strTrimmed.charAt(i);
 						if(!Character.isLetter(aChar) && !Character.isDigit(aChar)
-								&& aChar != '_' && aChar != '.' && aChar != '/' && aChar != '-') {	
+								&& aChar != '_' && aChar != '.' && aChar != '/' 
+								&& aChar != '-') {	
 							inputValid = false;
 							break;
 						}
@@ -233,9 +237,11 @@ public class ImageLoopEditor {
 	
 	
 	/**
-	 * A helper method to determine whether a string input has internal whitespace
+	 * A helper method to determine whether a string input has internal 
+	 * whitespace
 	 * @param str: a string to check
-	 * @return true if a string has spaces, not considering leading and tailing spaces
+	 * @return true if a string has spaces, not considering leading and 
+	 * tailing spaces
 	 */
 	private static boolean isInt(String str) {
 		if(allDigit(str)) {
@@ -339,7 +345,8 @@ public class ImageLoopEditor {
 					imagelist.add(newImage);
 				//otherwise, display a message that the image does not exist
 				} else {
-					System.out.println("Warning: " + filename + " is not in images folder");
+					System.out.println("Warning: " + filename + 
+							" is not in images folder");
 				}	
 			}
 			inFile.close();
@@ -639,7 +646,8 @@ public class ImageLoopEditor {
 			Iterator<Image> itr = imagelist.iterator();
 			while(itr.hasNext()) {
 				Image anImage = itr.next();
-				writer.println(anImage.getFile() + " " + anImage.getDuration() + " " + anImage.getTitle());
+				writer.println(anImage.getFile() + " " + anImage.getDuration() +
+						" " + anImage.getTitle());
 			}
 			writer.close();
 			output.close();
