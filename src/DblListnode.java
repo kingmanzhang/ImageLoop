@@ -1,3 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Main Class File:  ImageLoopEditor.java
+// File:             DblListnode.java
+// Semester:         
+//
+// Author:           Xingmin Zhang xzhang66@wisc.edu
+// CS Login:         (your login name)
+// Lecturer's Name:  (name of your lecturer)
+// Lab Section:      (your lab section number)
+//////////////////// STUDENTS WHO GET HELP FROM OTHER THAN THEIR PARTNER //////
+//                   fully acknowledge and credit all sources of help,
+//                   other than Instructors and TAs.
+//
+// Persons:          None
+//                   
+//
+// Online sources:   none
+//////////////////////////// 80 columns wide //////////////////////////////////
+
 
 /**
  * Generic doubly linked list node. It serves as the basic building block for 
