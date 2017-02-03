@@ -1,0 +1,1 @@
+The goal of this app is to display images on the desktop in a looped manner. The app asks user to load images listed in a file and store the images in a doubly-linked list. The app allows adding/inserting new images, editing image information, moving forward or backward, searching and saving. The app implements the iteractor inface. 
